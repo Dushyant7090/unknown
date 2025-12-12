@@ -3,7 +3,7 @@
 import { GoogleGenAI } from "@google/genai";
 
 export async function generateQuestions(topic: string) {
-  const apiKey = process.env.GEMINI_API_KEY || "AIzaSyA_eCV9qgJyrz6fDd3SeLrn4ftBVczv4HY";
+  const apiKey = process.env.GEMINI_API_KEY || "your_gemini_api_key";
 
   if (!apiKey) {
     console.error("GEMINI_API_KEY is missing");
